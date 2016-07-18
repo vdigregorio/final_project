@@ -68,18 +68,6 @@ Your instructional team will provide feedback on how well you execute best pract
 
 ---
 
-### Timeline
-
-| Milestone        | Due Date           | Deliverable  |
-| ------------- |:-------------:| -----:|
-| Milestone 1 | Week 05 | Project Proposal / Wireframes |
-| Milestone 2 | Week 07 | Draft of HTML / CSS (no JS) |
-| Milestone 3 | Week 08 | First draft of JS |
-| Milestone 4 | Week 09 | Updated Rough Draft |
-| Milestone 5 | Week 10 | Final Presentation |
-
----
-
 ## Hosting
 
 You can host your final project on the web for free using GitHub pages. Watch [this video](https://generalassembly.wistia.com/medias/jn23v1hc93) and see [this](Getting_Started_with_GitHub_Pages.pdf) guide for more information on how to host your site on GitHub pages. If you run into any problems with GitHub pages, your instructor and TA(s) should be able to help you troubleshoot.
@@ -89,11 +77,3 @@ You can host your final project on the web for free using GitHub pages. Watch [t
 
 - http://gallery.ga.co
 
-
-<br>
-
----
-
-###Evaluation / Submission
-
-Students will create a new repository on GitHub for their final project and push their code to this new repository when they are ready to submit. The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2).  **Note**: If bullet points have child bullets, the instructional team should grade the child bullets and not the parent bullet belonging to the child. The maximum possible score on this assignment is 22/22. Bonus sections are completely optional.
