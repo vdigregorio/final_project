@@ -6,36 +6,10 @@ body{
 	margin:0;
 	background-image: url("../images/woodbg.jpg");
 }
-#pame{
-	width: 200px;
-	height: 200px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	border: 10px solid lavender;
-}
-.about{
-	width: 70%;
-	display: absolute;
-	border: solid 5px lavender;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 50px;
-	font-family: "shadows into light";
-	font-weight: bold;
-	font-size: 20px;
-}
-h2{
-	text-align: center;
-	font-family: "lobster two";
-	font-size: 40px;
-}
 
 header{
 	margin: 10px;
 	width: 98%;
-
 	
 }
 
@@ -53,9 +27,33 @@ nav a{
 }
 
 h1{
-	font-family: "lobster";
+	font-family: "shadows into light";
 	float: left;
 	margin: 0;
+}
+h2{
+  text-align: center;
+	font-family: "lobster";
+  font-size: 30px;
+  border: solid 5px lavender;
+  width: 500px;
+  left: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+p{
+	font-family: "amatic sc";
+  font-size: 30px;
+  border: solid 5px lavender;
+  width: 500px;
+  left: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 #button{
 	float: right;
@@ -70,9 +68,8 @@ h1{
 	font-size: 18px;
 	
 }
-#block{
-	width: 100%;
-	height: 300px;
+#menu{
+	display: none;
 }
 
 .footer {
@@ -80,15 +77,15 @@ h1{
   right: 0;
   bottom: 0;
   left: 0;
+  
   text-align: center;
+  margin: 10px;
+  padding: 3px;
 }
 .clearfix:after {
   content: " ";
   clear: both;
   display: block;
-}
-#menu{
-	display: none;
 }
 @media only screen and (max-width: 660px){
 	nav a {

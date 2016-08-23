@@ -1,20 +1,18 @@
-img{
-	width: 100%;
-	height: 500px;
-}
+
 * {
 	box-sizing:border-box;
 }
 body{
-	font-family: Verdana,sans-serif;
 	margin:0;
+	background-image: url("../images/woodbg.jpg");
 }
-
 header{
-	margin: 0;
-	width: 100%;
+	margin: 10px;
+	width: 98%;
 	
-	background-color: lavender;
+}
+#border{
+	
 }
 
 }
@@ -26,40 +24,51 @@ nav a{
 	font-weight: bold;
 	color: black;	
 	text-decoration: none;
+	font-family: "lobster";
 	
 }
 
 h1{
+	font-family: "lobster";
 	float: left;
 	margin: 0;
 }
-button{
+#button{
 	float: right;
 	margin-top: 5px;
 	margin-right: 30px;
 	width: 100px;
-	border-radius: 10px;
-	background-color: #72bcd4;
 	text-align: center;
 }
-button:hover{
-	background-color: yellow;
+#button:hover{
+	background-color: lavender;
+	border-radius: 10px;
+	font-size: 18px;
 	
 }
-
-footer{
-	position: absolute;
-	width: 100%;
-	background-color: lavender;
-	height: 7%;
-	bottom: 0;
-	clear: both;
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
 }
-
 
 #menu{
 	display: none;
 }
+#slideshow{
+  width: 100%;
+  height: 400px;
+  top: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+ 
+}
+
 
 
 .clearfix:after {
@@ -68,35 +77,8 @@ footer{
   display: block;
 }
 
-.slideshow-container {
-  margin-top: 40px;
-  margin-left: 50px;
-  max-width: 90%;
-  position: relative;
-  align-self: center;
-  
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: gray;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -104,4 +86,31 @@ footer{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 660px){
+	nav a {
+    float: ;
+    width: auto;
+    font-size: 15px;
+    display: none;
+    }
+    #menu {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    }
+    #menu:hover{
+    background-color: lavender;
+    }
+    nav.open a {
+    display: block;
+    
+    }
+    nav.open a:hover{
+  	background-color: lavender;
+    }
 }

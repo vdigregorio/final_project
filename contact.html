@@ -3,22 +3,46 @@
 	<head>
 		<title> PDG BITES </title>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Amatic+SC:400,700|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" type="text/css" href="css/normalize.css">
-    		<link rel="stylesheet" type="text/css" href="css/main.css">
+    		<link rel="stylesheet" type="text/css" href="css/contact.css">
 	</head>
 
 	<body>
 		<header>
-		<h1>PDG BITES</h1>
-		<div class="navbar">
-		<nav>
-		<a href="home.html">HOME</a>
-		<a href="about.html">ABOUT</a>
-		<a href="services.html">SERVICES</a>
-		<a href="contact.html">CONTACT</a>
-		</nav>
-		</div>
+		
+			<h1>PDG Bites</h1>
+				
+					<nav class="clearfix">
+					   <a href="#" id="menu">&#9776;</a>
+					   <a id="button" href="contact.html">Contact
+					   </a>
+					   <a id="button" href="services.html">Recipes
+					   </a>
+					  <a id="button" href="about.html">About
+					  </a>
+					   <a id="button" href="home.html">Home
+					   </a>
+					</nav>
+		
 		</header>
 
-	</body>
-</html>
+		<h2>Contact me!</h2>
+		<p>Phone Number: (787) 321-8868<br>
+		   Email: pameladgh@hotmail.com<br></p>
+
+
+		<div class="footer">
+			<a href="http://www.instagram.com/pameladigregorio"><img id="sm" src="images/instagram.png" alt="Instagram"></a>
+          <a href="http://www.twitter.com"><img id="sm" src="images/twitter.png" alt="Twitter"></a>
+          <a href="http://www.facebook.com"><img id="sm" src="images/facebookk.png" alt="Facebook"></a>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript">
+			document.getElementById("menu").onclick = function(){
+      		document.querySelector("nav").classList.toggle("open");
+    		};
+		</script>
+		</body>
+		</html>
