@@ -169,6 +169,10 @@ fieldset {
 #error span p {
     color:#c0392b
 }
+#submit{
+    font-family: "lobster";
+    border-radius: 10px;
+}
 #button {
     float: right;
     margin-top: 5px;
@@ -231,3 +235,4 @@ fieldset {
         background-color: lavender;
         border-radius: 5px;
     }
+}
