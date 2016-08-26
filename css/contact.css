@@ -31,9 +31,10 @@ h2 {
     font-family: "lobster";
     font-size: 40px;
     text-align: center;
+    margin: 50px;
 }
 form {
-    margin:0;
+    margin:10px;
     position: absolute;
     left: 30%;
     top: 23%;
@@ -202,9 +203,49 @@ fieldset {
     clear: both;
     display: block;
 }
+fieldset{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
 @media only screen and (max-width: 660px) {
-    form {
+    header{
+        margin-bottom: 30px;
+    }
+    #name{
+        width: 270px;
+    }
+    #email{
+        width: 270px;
+    }
+    #phone{
+        width: 270px;
+    }
+    #message{
+        width: 300px;
+    }
+    form label {
+    display: block;
+    margin-bottom:.2em;
+    font-family:"lobster",sans-serif;
+    line-height:13px;
+    font-size:15px;
+    line-height:1.3rem;
+    color:#000;
+    }
+    .footer{
         margin: 0;
+    }
+    h2{
+        position: absolute;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    form {
+        margin-top: 50px; 
+        margin-bottom: 50px;
         position: absolute;
         left: 4%;
         top: 20%;

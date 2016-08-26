@@ -67,6 +67,7 @@ h1 {
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
+    margin-bottom: 50px;
 }
 .clearfix:after {
     content: " ";
@@ -87,6 +88,9 @@ h1 {
     }
 }
 @media only screen and (max-width: 660px) {
+    #slide, #slideshow{
+        height: 200px;
+    }
     nav a {
         width: auto;
         font-size: 15px;
