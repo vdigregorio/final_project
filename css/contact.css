@@ -10,7 +10,9 @@ header {
     margin: 10px;
     width: 98%;
 }
-
+br{
+    display: none;
+}
 }
 nav {
     height: 100px;
@@ -74,8 +76,7 @@ form input[type="time"],
 form input[type="url"],
 form textarea {
     margin-bottom:1.25em;
-    font-family:"lobster",
-    sans-serif;
+    font-family: helvetica;
     font-size:14px;
     line-height:14px;
     font-size:1.4rem;
@@ -236,6 +237,9 @@ fieldset{
     .footer{
         margin: 0;
     }
+    h1{
+        font-size: 25px;
+    }
     h2{
         position: absolute;
         font-size: 20px;
@@ -267,13 +271,24 @@ fieldset{
         background-color: lavender;
     }
     nav.open a {
-        display: inline-block;
+        display: table-row; 
+
     }
-    #button {
+    
+    a#button {
         float: none;
+        position: absolute;
+        right: 10px;   
+
     }
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
+    }
+    .clearfix{
+        margin-bottom: 10px;
+    }
+    br{
+        display: inline-block;
     }
 }

@@ -20,14 +20,15 @@ body {
 .about {
     width: 70%;
     display: absolute;
-    border: solid 5px rgba(230, 230, 250, 0.6);
+    padding: 15px;
     background-color: rgba(230, 230, 250, 0.6);
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
-    font-family: "shadows into light";
-    font-weight: bolder;
-    font-size: 25px;
+    font-family: helvetica;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
     
 }
 h2 {
@@ -39,7 +40,9 @@ header {
     margin: 10px;
     width: 98%;
 }
-
+br{
+    display: none;
+}
 }
 nav {
     height: 100px;
@@ -88,11 +91,15 @@ h1 {
     display: none;
 }
 @media only screen and (max-width: 660px) {
+    h1{
+        font-size: 25px;
+    }
     nav a {
         width: auto;
         font-size: 15px;
         display: none;
     }
+    
     #menu {
         cursor: pointer;
         position: absolute;
@@ -101,17 +108,31 @@ h1 {
         text-align: center;
         font-size: 25px;
     }
+    
     #menu:hover {
         background-color: lavender;
     }
+    
     nav.open a {
-        display: inline-block;
+        display: table-row; 
+
     }
-    #button {
+    
+    a#button {
         float: none;
+        position: absolute;
+        right: 10px;   
+
     }
+    
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
+    }
+    .clearfix{
+        margin-bottom: 10px;
+    }
+    br{
+        display: inline-block;
     }
 }

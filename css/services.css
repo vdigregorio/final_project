@@ -10,7 +10,9 @@ header {
     margin: 10px;
     width: 98%;
 }
-
+br{
+    display: none;
+}
 }
 nav {
     height: 100px;
@@ -80,6 +82,9 @@ p {
     display: block;
 }
 @media only screen and (max-width: 660px) {
+    h1{
+        font-size: 25px;
+    }
     nav a {
         width: auto;
         font-size: 15px;
@@ -97,13 +102,22 @@ p {
         background-color: lavender;
     }
     nav.open a {
-        display: inline-block;
+        display: table-row; 
+
     }
-    #button {
+    
+    a#button {
         float: none;
+        position: absolute;
+        right: 10px;   
+
     }
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
     }
+    br{
+        display: inline-block;
+    }
+    
 }
