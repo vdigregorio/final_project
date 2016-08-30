@@ -1,18 +1,22 @@
-
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background-image: url("../images/woodbg.jpg");
 }
+
 header {
     margin: 10px;
     width: 98%;
 }
-br{
+
+br {
     display: none;
 }
+
+
 }
 nav {
     height: 100px;
@@ -82,14 +86,16 @@ p {
     display: block;
 }
 @media only screen and (max-width: 660px) {
-    h1{
+    h1 {
         font-size: 25px;
     }
+    
     nav a {
         width: auto;
         font-size: 15px;
         display: none;
     }
+    
     #menu {
         cursor: pointer;
         position: absolute;
@@ -98,26 +104,27 @@ p {
         text-align: center;
         font-size: 25px;
     }
+    
     #menu:hover {
         background-color: lavender;
     }
+    
     nav.open a {
-        display: table-row; 
-
+        display: table-row;
     }
     
     a#button {
         float: none;
         position: absolute;
-        right: 10px;   
-
+        right: 10px;
     }
+    
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
     }
-    br{
+    
+    br {
         display: inline-block;
     }
-    
 }

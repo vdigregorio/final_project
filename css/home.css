@@ -13,9 +13,11 @@ header {
     background: 0.6;
 }
 
-br{
+br {
     display: none;
 }
+
+
 }
 nav {
     height: 100px;
@@ -90,15 +92,19 @@ h1 {
     }
 }
 @media only screen and (max-width: 660px) {
-    h1{
+    h1 {
         font-size: 25px;
     }
-    #slide, #slideshow{
+    
+    #slide,
+    #slideshow {
         height: 200px;
     }
-    #slideshow{
+    
+    #slideshow {
         margin-top: 20px;
     }
+    
     nav a {
         width: auto;
         font-size: 15px;
@@ -119,25 +125,25 @@ h1 {
     }
     
     nav.open a {
-        display: table-row; 
-
+        display: table-row;
     }
     
     a#button {
         float: none;
         position: absolute;
-        right: 10px;   
-
+        right: 10px;
     }
     
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
     }
-    .clearfix{
+    
+    .clearfix {
         margin-bottom: 10px;
     }
-    br{
+    
+    br {
         display: inline-block;
     }
 }

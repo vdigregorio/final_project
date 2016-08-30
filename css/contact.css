@@ -1,18 +1,22 @@
-
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background-image: url("../images/woodbg.jpg");
 }
+
 header {
     margin: 10px;
     width: 98%;
 }
-br{
+
+br {
     display: none;
 }
+
+
 }
 nav {
     height: 100px;
@@ -36,30 +40,29 @@ h2 {
     margin: 50px;
 }
 form {
-    margin:10px;
+    margin: 10px;
     position: absolute;
     left: 30%;
     top: 23%;
 }
 form label {
     display: block;
-    margin-bottom:.2em;
-    font-family:"lobster",
-    sans-serif;
-    font-size:13px;
-    line-height:13px;
-    font-size:1.3rem;
-    line-height:1.3rem;
-    color:#000;
+    margin-bottom: .2em;
+    font-family: "lobster", sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #000;
 }
 form label.error {
-    margin-top:-1em;
-    margin-bottom:1em;
-    font-size:12px;
-    line-height:12px;
-    font-size:1.2rem;
-    line-height:1.2rem;
-    color:#c0392b
+    margin-top: -1em;
+    margin-bottom: 1em;
+    font-size: 12px;
+    line-height: 12px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #c0392b
 }
 form input[type="text"],
 form input[type="password"],
@@ -75,20 +78,20 @@ form input[type="tel"],
 form input[type="time"],
 form input[type="url"],
 form textarea {
-    margin-bottom:1.25em;
+    margin-bottom: 1.25em;
     font-family: helvetica;
-    font-size:14px;
-    line-height:14px;
-    font-size:1.4rem;
-    line-height:1.4rem;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-    background:#e6e6e6;
-    border:1px solid #191919;
-    -moz-border-radius:0.2em 0.2em 0.2em 0.2em;
-    -webkit-border-radius:0.2em 0.2em 0.2em 0.2em;
-    border-radius:0.2em 0.2em 0.2em 0.2em
+    font-size: 14px;
+    line-height: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    background: #e6e6e6;
+    border: 1px solid #191919;
+    -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+    -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em;
+    border-radius: 0.2em 0.2em 0.2em 0.2em
 }
 form input[type="text"]:focus,
 form input[type="password"]:focus,
@@ -104,10 +107,10 @@ form input[type="tel"]:focus,
 form input[type="time"]:focus,
 form input[type="url"]:focus,
 form textarea:focus {
-    border-color:#191919;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none
+    border-color: #191919;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
 }
 form input[type="text"][disabled],
 form input[type="password"][disabled],
@@ -123,7 +126,7 @@ form input[type="tel"][disabled],
 form input[type="time"][disabled],
 form input[type="url"][disabled],
 form textarea[disabled] {
-    background:#fff
+    background: #fff
 }
 form input[type="text"].error,
 form input[type="password"].error,
@@ -139,39 +142,39 @@ form input[type="tel"].error,
 form input[type="time"].error,
 form input[type="url"].error,
 form textarea.error {
-    background:#e6e6e6;
-    border-color:#c0392b
+    background: #e6e6e6;
+    border-color: #c0392b
 }
 fieldset {
-    border:0px;
-    margin:0;
-    padding:0
+    border: 0px;
+    margin: 0;
+    padding: 0
 }
 .required {
-    color:#e9266d
+    color: #e9266d
 }
 #success,
 #error {
-    display:none;
+    display: none;
 }
 #success span,
 #error span {
-    display:block;
-    position:absolute;
-    top:0;
-    width:100%
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%
 }
 #success span p,
 #error span p {
-    margin-top:6em
+    margin-top: 6em
 }
 #success span p {
-    color:#9bd32d
+    color: #9bd32d
 }
 #error span p {
-    color:#c0392b
+    color: #c0392b
 }
-#submit{
+#submit {
     font-family: "lobster";
     border-radius: 10px;
 }
@@ -204,61 +207,72 @@ fieldset {
     clear: both;
     display: block;
 }
-fieldset{
+fieldset {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
 }
 @media only screen and (max-width: 660px) {
-    header{
+    header {
         margin-bottom: 30px;
     }
-    #name{
+    
+    #name {
         width: 270px;
     }
-    #email{
+    
+    #email {
         width: 270px;
     }
-    #phone{
+    
+    #phone {
         width: 270px;
     }
-    #message{
+    
+    #message {
         width: 300px;
     }
+    
     form label {
-    display: block;
-    margin-bottom:.2em;
-    font-family:"lobster",sans-serif;
-    line-height:13px;
-    font-size:15px;
-    line-height:1.3rem;
-    color:#000;
+        display: block;
+        margin-bottom: .2em;
+        font-family: "lobster", sans-serif;
+        line-height: 13px;
+        font-size: 15px;
+        line-height: 1.3rem;
+        color: #000;
     }
-    .footer{
+    
+    .footer {
         margin: 0;
     }
-    h1{
+    
+    h1 {
         font-size: 25px;
     }
-    h2{
+    
+    h2 {
         position: absolute;
         font-size: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
         text-align: center;
     }
+    
     form {
-        margin-top: 50px; 
+        margin-top: 50px;
         margin-bottom: 50px;
         position: absolute;
         left: 4%;
         top: 20%;
     }
+    
     nav a {
         width: auto;
         font-size: 15px;
         display: none;
     }
+    
     #menu {
         cursor: pointer;
         position: absolute;
@@ -267,28 +281,31 @@ fieldset{
         text-align: center;
         font-size: 25px;
     }
+    
     #menu:hover {
         background-color: lavender;
     }
+    
     nav.open a {
-        display: table-row; 
-
+        display: table-row;
     }
     
     a#button {
         float: none;
         position: absolute;
-        right: 10px;   
-
+        right: 10px;
     }
+    
     #button:hover {
         background-color: lavender;
         border-radius: 5px;
     }
-    .clearfix{
+    
+    .clearfix {
         margin-bottom: 10px;
     }
-    br{
+    
+    br {
         display: inline-block;
     }
 }
