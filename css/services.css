@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/woodbg.jpg");
+}
+
+header {
+    margin: 10px;
+    width: 98%;
+}
+
+br {
+    display: none;
+}
+
+
+}
+nav {
+    height: 100px;
+    right: 0;
+}
+nav a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family: "lobster";
+}
+h1 {
+    font-family: "lobster";
+    float: left;
+    margin: 0;
+}
+h2 {
+    font-size: 40px;
+    font-family: "lobster";
+    text-align: center;
+}
+p {
+    font-family: "amatic sc";
+    font-size: 30px;
+}
+#button {
+    float: right;
+    margin-top: 5px;
+    margin-right: 30px;
+    width: 100px;
+    text-align: center;
+}
+#button:hover {
+    background-color: lavender;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#menu {
+    display: none;
+}
+#wrapper {
+    width: 90%;
+    margin: 2% auto;
+    overflow: hidden;
+}
+.row img {
+    width: 200px;
+    height: 130px;
+    margin: .5%;
+}
+.row a:hover {
+    opacity: .8;
+}
+#sidedish {
+    margin-bottom: 50px;
+}
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+@media only screen and (max-width: 660px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    nav a {
+        width: auto;
+        font-size: 15px;
+        display: none;
+    }
+    
+    #menu {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #menu:hover {
+        background-color: lavender;
+    }
+    
+    nav.open a {
+        display: table-row;
+    }
+    
+    a#button {
+        float: none;
+        position: absolute;
+        right: 10px;
+    }
+    
+    #button:hover {
+        background-color: lavender;
+        border-radius: 5px;
+    }
+    
+    br {
+        display: inline-block;
+    }
+}

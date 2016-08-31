@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> PDG BITES </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Amatic+SC:400,700|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1>PDG Bites</h1>
+        <nav class="clearfix">
+            <a href="#" id="menu">&#9776;</a>
+            <a id="button" href="contact.html">Contact
+                       </a>
+            <br>
+            <a id="button" href="services.html">Recipes
+                       </a>
+            <br>
+            <a id="button" href="about.html">About
+                       </a>
+            <br>
+            <a id="button" href="home.html">Home
+                       </a>
+            <br>
+        </nav>
+    </header>
+    <h2> Contact Me!</h2>
+    <form id="contact" name="contact" method="post">
+        <fieldset>
+            <label for="name" id="name">Name<span class="required">*</span></label>
+            <input type="text" name="name" id="name" size="30" value="" required/>
+            <label for="email" id="email">Email<span class="required">*</span></label>
+            <input type="text" name="email" id="email" size="30" value="" required/>
+            <label for="phone" id="phone">Phone</label>
+            <input type="text" name="phone" id="phone" size="30" value="" />
+            <label for="Message" id="message">Message<span class="required">*</span></label>
+            <textarea name="message" id="message" required></textarea>
+            <input id="submit" type="submit" name="submit" value="Send" />
+        </fieldset>
+    </form>
+    <div id="success">
+        <span>
+    <p>Your message was sent succssfully! I will be in touch as soon as I can.</p>
+  </span>
+    </div>
+    <div id="error">
+        <span>
+    <p>Something went wrong, try refreshing and submitting the form again.</p>
+  </span>
+    </div>
+    <div class="footer">
+        <a href="http://www.instagram.com/pameladigregorio"><img id="sm" src="images/instagram.png" alt="Instagram"></a>
+        <a href="http://www.twitter.com"><img id="sm" src="images/twitter.png" alt="Twitter"></a>
+        <a href="http://www.facebook.com"><img id="sm" src="images/facebookk.png" alt="Facebook"></a>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#contact').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
+                },
+
+            },
+            messages: {
+                name: {
+                    required: "This field is Required",
+                    minlength: "your name must consist of at least 2 characters"
+                },
+                email: {
+                    required: "This field is Required"
+                },
+                message: {
+                    required: "This field is Required",
+                    minlength: ""
+                },
+
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type: "POST",
+                    data: $(form).serialize(),
+                    url: "process.php",
+                    success: function() {
+                        $('#contact :input').attr('disabled', 'disabled');
+                        $('#contact').fadeTo("slow", 0.15, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#success').fadeIn();
+                        });
+                    },
+                    error: function() {
+                        $('#contact').fadeTo("slow", 0.15, function() {
+                            $('#error').fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    document.getElementById("menu").onclick = function() {
+        document.querySelector("nav").classList.toggle("open");
+    };
+    </script>
+</body>
+
+</html>

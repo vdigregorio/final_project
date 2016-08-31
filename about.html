@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> PDG BITES </title>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Amatic+SC:400,700|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<body>
+    <header>
+        <h1>PDG Bites</h1>
+        <nav class="clearfix">
+            <a href="#" id="menu">&#9776;</a>
+            <a id="button" href="contact.html">Contact
+                       </a>
+            <br>
+            <a id="button" href="services.html">Recipes
+                       </a>
+            <br>
+            <a id="button" href="about.html">About
+                       </a>
+            <br>
+            <a id="button" href="home.html">Home
+                       </a>
+        </nav>
+    </header>
+    <div id="pic">
+        <h2>Pamela Di Gregorio</h2>
+        <img id="pame" src="images/pame.jpeg">
+    </div>
+    <div class="about">
+        <div>
+            Pamela believes that food is more than just fuel, it is our most basic medicine and it has the power to heal both the mind and body. She is a Functional Culinary Nutritionist that uses a root-cause approach to find sustainable solutions to health, while using foods strategically to target underlying imbalances. Pamela creates personalized meal plans and teaches dynamic cooking classes that focus on helping individuals become more independent in the kitchen. She has also worked as a private chef, recipe tester and developer, and has created innovative products for food companies. Pamela received her undergraduate degree in Nutrition and Dietetics from New York University, a natural chef certificate from the Natural Gourmet Institute, and a certification in Integrative and Functional Culinary Nutrition.
+        </div>
+    </div>
+    <div class="footer">
+        <a href="http://www.instagram.com/pameladigregorio"><img id="sm" src="images/instagram.png" alt="Instagram"></a>
+        <a href="http://www.twitter.com"><img id="sm" src="images/twitter.png" alt="Twitter"></a>
+        <a href="http://www.facebook.com"><img id="sm" src="images/facebookk.png" alt="Facebook"></a>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript">
+    document.getElementById("menu").onclick = function() {
+        document.querySelector("nav").classList.toggle("open");
+    };
+    </script>
+</body>
+
+</html>
